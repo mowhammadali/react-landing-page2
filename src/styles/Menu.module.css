@@ -1,0 +1,90 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu h4{
+    width: 180px;
+    padding: 6px 0;
+    margin-bottom: 8px;
+    color: var(--text-color);
+    border-bottom: 3px solid var(--text-color);
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu a{
+    transition: color .4s;
+    -webkit-transition: color .4s;
+    -moz-transition: color .4s;
+    -ms-transition: color .4s;
+    -o-transition: color .4s;
+}
+
+.menu a:hover{
+    color: var(--text-color);
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    
+    .menu h4{
+        font-size: 14px;
+        width: 140px;
+    }
+
+    .menu a{
+        font-size: 14px;
+    }
+}
+
+
+
+@media screen and (max-width: 992px){
+
+    .menu h4{
+        font-size: 12px;
+        width: 110px;
+    }
+
+    .menu a{
+        font-size: 12px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    .menu{
+        width: 100%;
+    }
+
+    .menu h4{
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .menu a{
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and (max-width: 576px){
+
+    .menu h4{
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .menu a{
+        font-size: 16px;
+    }
+}

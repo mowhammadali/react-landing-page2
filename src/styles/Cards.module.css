@@ -1,0 +1,47 @@
+.cards{
+    width: 65%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    
+    .cards{
+        width: 90%;
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    .cards{
+        width: 100%;
+        gap: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 576px){
+
+    .cards{
+        width: 90%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }    
+}
+
+
+
+@media screen and (max-width: 400px){
+
+    .cards{
+        width: 100%;
+    }
+}

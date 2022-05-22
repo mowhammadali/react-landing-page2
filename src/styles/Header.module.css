@@ -1,0 +1,159 @@
+.header{
+    padding: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.header article{
+    max-width: 50%;
+    color: var(--text-color);
+}
+
+.header article h1{
+    font-size: 30px;
+    margin-bottom: 24px;
+}
+
+.header article p{
+    font-size: 20px;
+    line-height: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.header article .buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.buttons button{
+    font-size: 16px;
+    padding: 10px 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.buttons button:nth-child(1){
+    color: var(--text-color);
+    background-color: #dfe4e3;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+.buttons button:nth-child(1):hover{
+    color: #e9edec;
+    background-color: var(--text-color);
+}
+
+.buttons button:nth-child(2){
+    color: #e9edec;
+    background-color: var(--text-color);
+}
+
+.header .picture{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .header{
+        padding: 110px;
+    }
+    
+    .header article h1{
+        font-size: 26px;
+    }
+    
+    .header article p{
+        font-size: 18px;
+    }
+
+    .picture img{
+        width: 300px;
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+    .header{
+        flex-direction: column;
+    }
+
+    .header article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 80%;
+        margin-bottom: 80px;
+    }
+
+    .header article p{
+        text-align: center;
+    }
+
+    .picture img{
+        width: 350px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    .header article{
+        max-width: 100%;
+    }
+
+    .header article h1{
+        font-size: 24px;
+    }
+
+    .header article p{
+        font-size: 16px;
+    }
+
+    .picture img{
+        width: 300px;
+    }
+}
+
+
+
+@media screen and (max-width: 576px){
+
+    .header{
+        padding: 50px;
+    }
+
+    .header article h1{
+        font-size: 18px;
+    }
+
+    .header article p{
+        font-size: 14px;
+    }
+
+    .buttons button{
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .picture img{
+        width: 220px;
+    }
+}
